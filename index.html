@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Janiyah!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgba(255, 0, 0, 0.828);">
+
+    <script>
+        function celebrate(){
+            document.getElementById("celebration").removeAttribute("hidden");
+        }
+
+        function awkward(){
+            document.getElementById("awkward").removeAttribute("hidden");
+        }
+
+        function reset(){
+            document.getElementById("celebration").setAttribute("hidden", "hidden");
+            document.getElementById("awkward").setAttribute("hidden", "hidden");
+        }
+    </script>
+
+    <h1 style="color: white;">
+        Happy (Early) Valentine's Day!
+    </h1>
+    <h2 style="color: white;">
+        Welcome Janiyah! <br><br> If you couldn't tell by now I've built this website (from scratch)
+        <br> to ask you a very important question. I've had such a <br> pleasure getting to know you these past few months 
+        so it's my honor to ask you the following:
+    </h2>
+    <h2 id="question" style="color: white;">
+        Will You Be My Valentine?
+    </h2>
+    <button style="font-size: 25px; background-color: white; color:rgb(250, 51, 84); border-radius:15px;" onclick="celebrate()">
+        Yes
+    </button>
+    <button style="font-size: 25px; background-color: white; color:rgb(250, 51, 84); border-radius:15px;" onclick="awkward()">
+        No
+    </button>
+    <button style="font-size: 25px; background-color: white; color:rgb(250, 51, 84); border-radius:15px;" onclick="reset()">
+        Reset
+    </button>
+    <div id="celebration" hidden="hidden">
+        <iframe src="https://giphy.com/embed/TmT51OyQLFD7a" width="400" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/america-fireworks-4th-of-july-TmT51OyQLFD7a"></a></p>
+    </div>
+    <div id="awkward" hidden="hidden">
+        <iframe src="https://giphy.com/embed/LTFmLb6e88cPz2sjux" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/LTFmLb6e88cPz2sjux"></a></p>
+    </div>
+    
+</body>
+</html>
